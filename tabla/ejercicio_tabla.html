@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clasificación Torneo Videojuegos</title>
+    <style>
+        
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tfoot {
+            background-color: #ecf0f1;
+            font-weight: bold;
+        }
+
+        .main-title {
+            font-size: 1.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7" class="main-title">Clasificación Global - Torneo Pro Gamer 2026</th>
+            </tr>
+            <tr>
+                <th>Región</th>
+                <th>Equipo</th>
+                <th>J</th>
+                <th>G</th>
+                <th>P</th>
+                <th>Puntos</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td rowspan="2"><strong>Norte</strong></td>
+                <td>Equipo Alpha</td>
+                <td>10</td>
+                <td>9</td>
+                <td>1</td>
+                <td>980</td>
+                <td>Clasificado</td>
+            </tr>
+            <tr>
+                <td>Equipo Beta</td>
+                <td>10</td>
+                <td>7</td>
+                <td>3</td>
+                <td>870</td>
+                <td>Eliminado</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2"><strong>Sur</strong></td>
+                <td>Equipo Gamma</td>
+                <td>10</td>
+                <td>8</td>
+                <td>2</td>
+                <td>920</td>
+                <td>Clasificado</td>
+            </tr>
+            <tr>
+                <td>Equipo Delta</td>
+                <td>10</td>
+                <td>6</td>
+                <td>4</td>
+                <td>750</td>
+                <td>Eliminado</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">Campeón Actual: <strong>Equipo Alpha</strong></td>
+                <td colspan="3">Total Participantes: 4 Equipos</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
