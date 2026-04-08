@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Tarjeta de Perfil - Flexbox Workshop</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #401777 0%, #d6e233 100%);
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+   
+    .tarjeta {
+      background: rgb(255, 255, 255);
+      width: 100%;
+      max-width: 380px;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    
+      display: flex;
+      flex-direction: column; 
+      align-items: center;    
+      gap: 20px;              
+      text-align: center;
+    }
+
+    
+    .perfil-header {
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #00d640;
+      object-fit: cover;
+    }
+
+    .nombre-usuario h2 {
+      color: #333;
+      font-size: 1.5rem;
+    }
+
+    .nombre-usuario span {
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    
+    .bio {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    
+    .estadisticas {
+      width: 100%;
+     
+      display: flex;
+      justify-content: space-around; 
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-num {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: #888;
+      text-transform: uppercase;
+    }
+
+    
+    .botones {
+      width: 100%;
+     
+      display: flex;
+      gap: 10px; 
+    }
+
+    .btn {
+     
+      flex: 1; 
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .btn:active { transform: scale(0.95); }
+
+    .btn-seguir { background: #50a8e2; color: white; }
+    .btn-mensaje { background: #f0f0f0; color: #333; }
+
+    
+    .miniaturas {
+      width: 100%;
+      
+      display: flex;
+      flex-wrap: wrap;       
+      justify-content: center; 
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    .mini-img {
+      
+      flex-grow: 1;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #eee;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="tarjeta">
+    
+    <div class="perfil-header">
+      <img src="https://img.asmedia.epimg.net/resizer/v2/4KMHNGY4JFDTJPTQPJUO5JBD5U.jpg?auth=57d538267fdf323bcee1994b06fc7e297677f3e4be6ff749b14cd1b4f983d9bc&width=1200&height=1200&smart=true" alt="Avatar" class="avatar">
+      <div class="nombre-usuario">
+        <h2>Trunks Del Futuro ☑</h2>
+        <span>@trunks.dev</span>
+      </div>
+    </div>
+    
+    <p class="bio">
+      Me gusta ser el papu misterioso. De vez en cuando viajo al pasado porque mi futuro se jode.
+      <br>Traiganle una falda a la niña  ⚔.
+    </p>
+    
+    <div class="estadisticas">
+      <div class="stat-item">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Proyectos</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">14.7 M</span>
+        <span class="stat-label">Seguidores</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">12</span>
+        <span class="stat-label">Siguiendo</span>
+      </div>
+    </div>
+    
+    <div class="botones">
+      <button class="btn btn-seguir">Seguir</button>
+      <button class="btn btn-mensaje">Mensaje</button>
+    </div>
+    
+    <div class="miniaturas">
+      <img src="https://i.pinimg.com/736x/b9/8f/d0/b98fd0c8d096e2c06bdcbd03134c67ba.jpg" alt="P1" class="mini-img">
+      <img src="https://preview.redd.it/trunks-gets-mai-who-does-goten-and-up-with-v0-s9ggmk6dcdif1.jpeg?auto=webp&s=88148236f969fdd477751cdf85b8556d3a0da56e" alt="P2" class="mini-img">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKq0Z-P6UsgPNTnmTLpeZoE8P_4UgSwvaQbQ&s" alt="P3" class="mini-img">
+    </div>
+    
+  </div>
+
+</body>
+</html>
